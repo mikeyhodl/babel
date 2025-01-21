@@ -75,6 +75,7 @@ export {
   importDefaultSpecifier as ImportDefaultSpecifier,
   importNamespaceSpecifier as ImportNamespaceSpecifier,
   importSpecifier as ImportSpecifier,
+  importExpression as ImportExpression,
   metaProperty as MetaProperty,
   classMethod as ClassMethod,
   objectPattern as ObjectPattern,
@@ -244,6 +245,7 @@ export {
   tsAsExpression as TSAsExpression,
   tsSatisfiesExpression as TSSatisfiesExpression,
   tsTypeAssertion as TSTypeAssertion,
+  tsEnumBody as TSEnumBody,
   tsEnumDeclaration as TSEnumDeclaration,
   tsEnumMember as TSEnumMember,
   tsModuleDeclaration as TSModuleDeclaration,
@@ -262,4 +264,4 @@ export {
   regexLiteral as RegexLiteral,
   restProperty as RestProperty,
   spreadProperty as SpreadProperty,
-} from "./index";
+} from "./index.ts";
