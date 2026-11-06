@@ -131,7 +131,38 @@ describe("@babel/core errors", function () {
       });
     }).toMatchInlineSnapshot(`
       "Error: Error while parsing config - JSON5: invalid character '}' at 3:1
-          at <CWD>/packages/babel-core/test/fixtures/errors/invalid-json/babel.config.json
+          at <BABEL_CORE_LIB_SOME_FILE>:_:_
+          at <BABEL_CORE_LIB_SOME_FILE>:_:_
+          at Generator.next (<anonymous>)
+          at Function.<anonymous> (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at Generator.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at Function.sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at onFirstPause (<CWD>/node_modules/gensync/index.js:_:_)
+          at Generator.next (<anonymous>)
+          at cachedFunction (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at cachedFunction.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at <CWD>/node_modules/gensync/index.js:_:_
+          at Array.map (<anonymous>)
+          at gensync.sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at gensync.all (<CWD>/node_modules/gensync/index.js:_:_)
+          at Generator.next (<anonymous>)
+          at loadOneConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadOneConfig.next (<anonymous>)
+          at buildRootChain (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at buildRootChain.next (<anonymous>)
+          at loadPrivatePartialConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPrivatePartialConfig.next (<anonymous>)
+          at loadFullConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFullConfig.next (<anonymous>)
+          at parse (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at parse.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at stopHiding - secret - don't use this - v1 (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at Module.parseSync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at <CWD>/packages/babel-core/test/errors-stacks.js:_:_
           at expectError (<CWD>/packages/babel-core/test/errors-stacks.js:_:_)
@@ -147,7 +178,27 @@ describe("@babel/core errors", function () {
       });
     }).toMatchInlineSnapshot(`
       "Error: Configuration contains string/RegExp pattern, but no filename was passed to Babel
-          at <CWD>/packages/babel-core/test/fixtures/errors/use-exclude/babel.config.js
+          at matchPattern (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at <BABEL_CORE_LIB_SOME_FILE>:_:_
+          at Array.some (<anonymous>)
+          at matchesPatterns (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at configFieldIsApplicable (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at configIsApplicable (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at chainWalker (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at chainWalker.next (<anonymous>)
+          at loadFileChain (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFileChain.next (<anonymous>)
+          at buildRootChain (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at buildRootChain.next (<anonymous>)
+          at loadPrivatePartialConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPrivatePartialConfig.next (<anonymous>)
+          at loadFullConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFullConfig.next (<anonymous>)
+          at parse (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at parse.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at stopHiding - secret - don't use this - v1 (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at Module.parseSync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at <CWD>/packages/babel-core/test/errors-stacks.js:_:_
           at expectError (<CWD>/packages/babel-core/test/errors-stacks.js:_:_)
@@ -164,6 +215,25 @@ describe("@babel/core errors", function () {
       });
     }).toMatchInlineSnapshot(`
       "Error: Configuration contains string/RegExp pattern, but no filename was passed to Babel
+          at matchPattern (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at <BABEL_CORE_LIB_SOME_FILE>:_:_
+          at Array.some (<anonymous>)
+          at matchesPatterns (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at configFieldIsApplicable (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at configIsApplicable (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at chainWalker (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at chainWalker.next (<anonymous>)
+          at buildRootChain (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at buildRootChain.next (<anonymous>)
+          at loadPrivatePartialConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPrivatePartialConfig.next (<anonymous>)
+          at loadFullConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFullConfig.next (<anonymous>)
+          at parse (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at parse.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at stopHiding - secret - don't use this - v1 (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at Module.parseSync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at <CWD>/packages/babel-core/test/errors-stacks.js:_:_
           at expectError (<CWD>/packages/babel-core/test/errors-stacks.js:_:_)
@@ -183,6 +253,21 @@ describe("@babel/core errors", function () {
       babel.transformSync(code, { filename: 'file.ts', presets: [/* your preset */] });
       \`\`\`
       See https://babeljs.io/docs/en/options#filename for more information.
+          at validateIfOptionNeedsFilename (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at validatePreset (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPresetDescriptor (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPresetDescriptor.next (<anonymous>)
+          at recursePresetDescriptors (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at recursePresetDescriptors.next (<anonymous>)
+          at <BABEL_CORE_LIB_SOME_FILE>:_:_
+          at Generator.next (<anonymous>)
+          at loadFullConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFullConfig.next (<anonymous>)
+          at parse (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at parse.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at stopHiding - secret - don't use this - v1 (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at Module.parseSync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at <CWD>/packages/babel-core/test/errors-stacks.js:_:_
           at expectError (<CWD>/packages/babel-core/test/errors-stacks.js:_:_)
@@ -198,7 +283,23 @@ describe("@babel/core errors", function () {
       });
     }).toMatchInlineSnapshot(`
       "Error: .sourceType must be "module", "commonjs", "script", "unambiguous", or undefined
-          at <CWD>/packages/babel-core/test/fixtures/errors/invalid-option/babel.config.json
+          at validate (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at <BABEL_CORE_LIB_SOME_FILE>:_:_
+          at cachedFunction (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at cachedFunction.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at buildRootChain (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at buildRootChain.next (<anonymous>)
+          at loadPrivatePartialConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPrivatePartialConfig.next (<anonymous>)
+          at loadFullConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFullConfig.next (<anonymous>)
+          at parse (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at parse.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at stopHiding - secret - don't use this - v1 (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at Module.parseSync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at <CWD>/packages/babel-core/test/errors-stacks.js:_:_
           at expectError (<CWD>/packages/babel-core/test/errors-stacks.js:_:_)
@@ -215,6 +316,16 @@ describe("@babel/core errors", function () {
       }),
     ).toMatchInlineSnapshot(`
       "Error: .sourceType must be "module", "commonjs", "script", "unambiguous", or undefined
+          at validate (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPrivatePartialConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadPrivatePartialConfig.next (<anonymous>)
+          at loadFullConfig (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at loadFullConfig.next (<anonymous>)
+          at parse (<BABEL_CORE_LIB_SOME_FILE>:_:_)
+          at parse.next (<anonymous>)
+          at evaluateSync (<CWD>/node_modules/gensync/index.js:_:_)
+          at sync (<CWD>/node_modules/gensync/index.js:_:_)
+          at stopHiding - secret - don't use this - v1 (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at Module.parseSync (<BABEL_CORE_LIB_SOME_FILE>:_:_)
           at <CWD>/packages/babel-core/test/errors-stacks.js:_:_
           at expectError (<CWD>/packages/babel-core/test/errors-stacks.js:_:_)
